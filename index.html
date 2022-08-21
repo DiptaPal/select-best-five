@@ -17,6 +17,7 @@
     
 </head>
 <body>
+    <!-- header section start -->
     <nav>
         <div class="flex flex-row justify-between items-center px-8 text-2xl 2xl:text-4xl font-bold bg-black text-white">
             <div class="flex flex-row items-center">
@@ -41,9 +42,10 @@
                 <img class="w-2/4 m-auto md:w-fit md:absolute md:-bottom-3 xl:-bottom-5 2xl:-bottom-6" src="./images/header1.png" alt="">
             </div>
             <div class="md:w-1/2 flex justify-center items-center px-10 md:px-0 md:py-24 lg:py-32 2xl:py-40 m-auto md:m-0">
-               <div class="text-center">
+               <div class="text-center relative">
                     <h1 class="sm:text-4xl xl:text-6xl 2xl:text-8xl font-medium text-orange-600 font-berkshire header-title">Build Your Own Team</h1>
-                    <p class="sm:text-2xl xl:text-4xl font-light text-white">BuildYourOwnTeam.com is an online formation creator app for soccer lovers. Create your own football team with our squad builder. Share tactics with your friends and followers.</p>
+                    <img class="absolute right-1/4 md:right-0 w-24 md:w-36 2xl:w-fit" src="./images/white_underline.png" alt="">
+                    <p class="sm:text-2xl xl:text-3xl font-light text-white pt-8">BuildYourOwnTeam.com is an online formation creator app for soccer lovers. Create your own football team with our squad builder. Share tactics with your friends and followers.</p>
                </div>
             </div>
             <div class="md:w-3/12 md:relative flex justify-between md:flex-col">
@@ -59,7 +61,56 @@
             </div>
         </div>
     </header>
-
+    <!-- header section end -->
+    <!-- main section start -->
+    <main class="bg-neutral-700">
+        <div class="grid grid-cols-4 gap-8 mx-24 pt-16 pb-24">
+            <div class="text-center bg-black text-white">
+                <img class="w-full" src="./images/players/neymar.png" alt="">
+                <div>
+                    <h3 class="text-3xl font-semibold my-8">Neymar Jr</h3>
+                    <div>
+                        <p class="text-2xl">102 Goals<span class="mx-4 text-4xl">.</span>54 Assist</p>
+                    </div>
+                    <button class="text-3xl font-semibold rounded-md bg-blue-800 hover:bg-orange-600 w-9/12 py-3 my-8">SELECT</button>
+                </div>
+            </div>
+            <div class="text-center bg-black text-white">
+                <img class="w-full" src="./images/players/messi.png" alt="">
+                <div>
+                    <h3 class="text-3xl font-semibold my-8">Lionel Messi</h3>
+                    <div>
+                        <p class="text-2xl">11 Goals<span class="mx-4 text-4xl">.</span>14 Assist</p>
+                    </div>
+                    <button class="text-3xl font-semibold rounded-md bg-blue-800 hover:bg-orange-600 w-9/12 py-3 my-8">SELECT</button>
+                </div>
+            </div>
+            <div class="text-center bg-black text-white">
+                <img class="w-full" src="./images/players/mbappe.png" alt="">
+                <div>
+                    <h3 class="text-3xl font-semibold my-8">Kylian Mbappé</h3>
+                    <div>
+                        <p class="text-2xl">42 Goals<span class="mx-4 text-4xl">.</span>11 Assist</p>
+                    </div>
+                    <button class="text-3xl font-semibold rounded-md bg-blue-800 hover:bg-orange-600 w-9/12 py-3 my-8">SELECT</button>
+                </div>
+            </div>
+            <div class="text-center bg-black text-white font-semibold">
+                <h3 class="text-5xl mt-8">Selected - V</h3>
+                <img class="mx-auto mb-7 w-9/12" src="./images/orange_underline.png" alt="">
+                <div>
+                    <ol class="list-decimal text-left px-12 list-inside text-3xl marker:text-amber-500">
+                        <li class="pt-8"><span class="px-4"></span>Lionel Messi</li>
+                        <li class="pt-8"><span class="px-4"></span>Neymar Jr</li>
+                        <li class="pt-8"><span class="px-4"></span>Kylian Mbappé</li>
+                        <li class="pt-8"><span class="px-4"></span>Kylian Mbappé</li>
+                        <li class="pt-8"><span class="px-4"></span>Kylian Mbappé</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- main section end -->
 
 
     <script src=""></script>
