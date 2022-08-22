@@ -20,3 +20,17 @@ function disabledBtn(element){
     element.setAttribute('disabled','true');
     element.style.backgroundColor = 'gray';
 }
+
+//get value from input box 
+function getValueById(elementId){
+    const element = document.getElementById(elementId);
+    const elementValueString = element.value;
+    const elementValue = parseFloat(elementValueString);
+    return elementValue;
+}
+
+//set value in element
+function setInnerTextById(elementId,elementValue){
+    const element = document.getElementById(elementId);
+    element.innerText = elementValue;
+}
