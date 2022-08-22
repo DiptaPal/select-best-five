@@ -20,18 +20,20 @@
     <!-- header section start -->
     <nav>
         <div class="flex flex-row justify-between items-center px-8 text-2xl 2xl:text-4xl font-bold bg-black text-white">
-            <div class="flex flex-row items-center">
-                <img class="w-16 md:w-20 2xl:w-28" src="./images/logo.png" alt="">
-                <p>BYOT</p>
+            <div>
+                <a href="#" class="flex flex-row items-center">
+                    <img class="w-16 md:w-20 2xl:w-28" src="./images/logo.png" alt="">
+                    <p>BYOT</p>
+                </a>
             </div>
             <div>
                 <ul class="flex flex-row">
-                    <li class="px-6 hidden md:block">Home</li>
-                    <li class="pr-6 hidden md:block">Players</li>
-                    <li class="pr-6 hidden md:block">Coach</li>
-                    <li class="hidden md:block">Contact</li>
-                    <li class="px-6 hidden md:block">About</li>
-                    <li><i class="fa-solid fa-bars block md:hidden mr-14"></i></li>
+                    <li class="px-6 hidden md:block"><a href="#">Home</a></li>
+                    <li class="pr-6 hidden md:block"><a href="#">Players</a></li>
+                    <li class="pr-6 hidden md:block"><a href="#">Coach</a></li>
+                    <li class="hidden md:block"><a href="#">Live</a></li>
+                    <li class="px-6 hidden md:block"><a href="#">Contact</a></li>
+                    <li><a href="#"><i class="fa-solid fa-bars block md:hidden mr-14"></i></a></i></li>
                 </ul>
             </div>
         </div>
@@ -193,7 +195,7 @@
                             <button class="text-2xl md:text-base font-semibold rounded-md bg-blue-800 hover:bg-orange-600 w-9/12 py-3 my-8" id="total-calculate">Calculate Total</button>
                             <p class="text-red-600 font-medium mb-6" id="player-value-error">This is error</p>
                             <div class="flex flex-row justify-center items-center pb-10">
-                                <p class="w-2/4 text-left">Total </p><p class="w-2/4 text-orange-600">$<span id="total"></span></p>
+                                <p class="w-2/4 text-left">Total </p><p class="w-2/4 text-orange-600">$<span id="total">00.00</span></p>
                             </div>
                         </div>
                     </div> 
@@ -203,7 +205,33 @@
     </main>
     <!-- main section end -->
 
+    <!-- footer section start -->
+    
+    <footer class="bg-black p-4 text-center text-white py-20">
+        <h1 class="text-4xl font-extrabold">BYOT <i class="fa-solid fa-futbol"></i></h1>
+        <p class="text-2xl w-2/5 m-auto py-6">Office 41, Zawaya Buildin, Ghala Muscat, Sultanate of Oman</p>
+        <p class="text-lg">Privacy Ploicy | Terms of use</p>
 
+        <div class="flex justify-center pt-6 space-x-6 text-2xl">
+            <a href="https://www.facebook.com/" class="text-white hover:text-sky-500">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/" class="text-white hover:text-sky-500">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/" class="text-white hover:text-sky-500">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://github.com/" class="text-white hover:text-sky-500">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://dribbble.com/" class="text-white hover:text-sky-500">
+                <i class="fa-brands fa-dribbble"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- footer section end -->
     <script src="./js/utilities.js"></script>
     <script src="./js/app.js"></script>
 </body>
