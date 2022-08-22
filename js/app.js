@@ -29,7 +29,7 @@ document.getElementById('calculate').addEventListener('click', function(){
     const totalPlayer = playerName.length;
 
     //per player price with error handling
-    const perPlayerPrice = errorHanding('player-price');
+    const perPlayerPrice = valueWithoutError('player-price');
     if(totalPlayer === 0){
         setInnerTextById('select-error',"Please select the player first");
     }
@@ -55,8 +55,9 @@ document.getElementById('total-calculate').addEventListener('click',function(){
     const totalPriceString = totalPlayerPrice.innerText;
     const totalPrice = parseFloat(totalPriceString);
 
-    const managerPrice = errorHanding('manager-price');
-    const coachPrice = errorHanding('coach-price');
+    const managerPrice = valueWithoutError('manager-price');
+    const coachPrice = valueWithoutError('coach-price');
+    const playerPrice = valueWithoutError('player-price')
 
 
     //total price of selected player
@@ -66,9 +67,9 @@ document.getElementById('total-calculate').addEventListener('click',function(){
     if(totalPlayer === 0){
         setInnerTextById('select-error',"Please select the player first");
     }
-    if(totalPrice === 0){
-        setInnerTextById('player-value-error', 'Please provide minimum player cost');
-
+    if((isNaN(playerPrice) === true) || (totalPrice === 0)){
+        setInnerTextById('player-value-error', 'Please press the calculate button');
+        return;
     }
     if((isNaN(managerPrice) === true) || (isNaN(coachPrice) === true)){
         setInnerTextById('value-error', 'Please provide a valid input');

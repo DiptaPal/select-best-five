@@ -20,23 +20,14 @@ function disabledBtn(element){
     element.setAttribute('disabled','true');
     element.style.backgroundColor = 'gray';
 }
-
-// //get value from input box 
-// function getValueById(elementId){
-//     const element = document.getElementById(elementId);
-//     const elementValueString = element.value;
-//     const elementValue = parseFloat(elementValueString);
-//     return elementValue;
-// }
-
 //set value in element
 function setInnerTextById(elementId,elementValue){
     const element = document.getElementById(elementId);
     element.innerText = elementValue;
 }
 
-//function for error handling
-function errorHanding(elementId){
+//function for return element value with error handling
+function valueWithoutError(elementId){
     const element = document.getElementById(elementId);
     const elementValueString = element.value;
     const elementValue = parseFloat(elementValueString);
