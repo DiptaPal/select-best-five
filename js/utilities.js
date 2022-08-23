@@ -26,7 +26,7 @@ function setInnerTextById(elementId,elementValue){
     element.innerText = elementValue;
 }
 
-//function for return element value with error handling
+//function for get element value with error handling
 function valueWithoutError(elementId){
     const element = document.getElementById(elementId);
     const elementValueString = element.value;

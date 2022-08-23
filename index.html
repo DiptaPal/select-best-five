@@ -19,7 +19,7 @@
 <body>
     <!-- header section start -->
     <nav>
-        <div class="flex flex-row justify-between items-center px-8 text-2xl 2xl:text-4xl font-bold bg-black text-white">
+        <div class="flex flex-row justify-between items-center px-8 text-2xl 2xl:text-3xl font-bold bg-black text-white">
             <div>
                 <a href="#" class="flex flex-row items-center">
                     <img class="w-16 md:w-20 2xl:w-28" src="./images/logo.png" alt="">
@@ -28,11 +28,11 @@
             </div>
             <div>
                 <ul class="flex flex-row">
-                    <li class="px-6 hidden md:block"><a href="#">Home</a></li>
-                    <li class="pr-6 hidden md:block"><a href="#">Players</a></li>
-                    <li class="pr-6 hidden md:block"><a href="#">Coach</a></li>
+                    <li class="px-8 hidden md:block"><a href="#">Home</a></li>
+                    <li class="pr-8 hidden md:block"><a href="#">Players</a></li>
+                    <li class="pr-8 hidden md:block"><a href="#">Coach</a></li>
                     <li class="hidden md:block"><a href="#">Live</a></li>
-                    <li class="px-6 hidden md:block"><a href="#">Contact</a></li>
+                    <li class="px-8 hidden md:block"><a href="#">Contact</a></li>
                     <li><a href="#"><i class="fa-solid fa-bars block md:hidden mr-14"></i></a></i></li>
                 </ul>
             </div>
@@ -66,138 +66,152 @@
     <!-- header section end -->
     <!-- main section start -->
     <main class="bg-neutral-900">
-        <div class="grid grid-cols-10 md:gap-4 mx-8 lg:mx-24 pt-16 pb-24">
-            <div class="col-span-12 sm:col-span-10 md:col-span-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div class="text-center bg-black text-white">
-                    <img class="w-full" src="./images/players/neymar.png" alt="">
-                    <div>
-                        <h3 class="sm:text-3xl font-semibold my-4 sm:my-8">Neymar Jr</h3>
-                        <div>
-                            <p class="sm:text-2xl">102 Goals<span class="mx-2 sm:mx-4 text-4xl">.</span>54 Assist</p>
+        <div class="grid grid-cols-4 md:gap-8 mx-10 lg:mx-16 pt-16 pb-24">
+            <div class="col-span-4 md:col-span-4 lg:col-span-3">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="text-center bg-black text-white border-2 border-gray-500">
+                        <img class="w-full" src="./images/players/neymar.png" alt="">
+                        <div class="py-8">
+                            <h3 class="text-3xl lg:text-2xl font-semibold">Neymar Jr</h3>
+                            <div>
+                                <p class="sm:text-lg lg:text-base mb-6">102 Goals<span class="mx-2 sm:mx-4 text-4xl">.</span>54 Assist</p>
+                            </div>
+                            <button class="text-2xl lg:text-lg font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-3/5 py-1 sm:py-2 select-btn">SELECT</button>
                         </div>
-                        <button class="sm:text-3xl font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-9/12 py-1 sm:py-3 my-4 sm:my-8 select-btn">SELECT</button>
                     </div>
-                </div>
-                <div class="text-center bg-black text-white">
-                    <img class="w-full" src="./images/players/messi.png" alt="">
-                    <div>
-                        <h3 class="sm:text-3xl font-semibold my-4 sm:my-8">Lionel Messi</h3>
-                        <div>
-                            <p class="sm:text-2xl">11 Goals<span class="mx-2 sm:mx-4 text-4xl">.</span>14 Assist</p>
+                    <div class="text-center bg-black text-white border-2 border-gray-500">
+                        <img class="w-full" src="./images/players/messi.png" alt="">
+                        <div class="py-8">
+                            <h3 class="text-3xl lg:text-2xl font-semibold">Lionel Messi</h3>
+                            <div>
+                                <p class="text-lg lg:text-base mb-6">11 Goals<span class="mx-2 sm:mx-4 text-4xl">.</span>14 Assist</p>
+                            </div>
+                            <button class="text-2xl lg:text-lg font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-3/5 py-1 sm:py-2 select-btn">SELECT</button>
                         </div>
-                        <button class="sm:text-3xl font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-9/12 py-1 sm:py-3 my-4 sm:my-8 select-btn">SELECT</button>
                     </div>
-                </div>
-                <div class="text-center bg-black text-white">
-                    <img class="w-full" src="./images/players/mbappe.png" alt="">
-                    <div>
-                        <h3 class="sm:text-3xl font-semibold my-4 sm:my-8">Kylian Mbappé</h3>
-                        <div>
-                            <p class="sm:text-2xl">42 Goals<span class="mx-2 sm:mx-4 text-4xl">.</span>11 Assist</p>
+                    <div class="text-center bg-black text-white border-2 border-gray-500">
+                        <img class="w-full" src="./images/players/mbappe.png" alt="">
+                        <div class="py-8">
+                            <h3 class="text-3xl lg:text-2xl font-semibold">Kylian Mbappé</h3>
+                            <div>
+                                <p class="text-lg lg:text-base mb-6">42 Goals<span class="mx-2 sm:mx-4 text-4xl">.</span>11 Assist</p>
+                            </div>
+                            <button class="text-2xl lg:text-lg font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-3/5 py-1 sm:py-2 select-btn">SELECT</button>
                         </div>
-                        <button class="sm:text-3xl font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-9/12 py-1 sm:py-3 my-4 sm:my-8 select-btn">SELECT</button>
                     </div>
-                </div>
-                <div class="text-center bg-black text-white">
-                    <img class="w-full" src="./images/players/vitor.png" alt="">
-                    <div>
-                        <h3 class="sm:text-3xl font-semibold my-4 sm:my-8">Vítor Machado</h3>
-                        <div>
-                            <p class="sm:text-2xl">3 Goals<span class="mx-2 sm:mx-4 text-4xl">.</span>5 Assist</p>
+                    <div class="text-center bg-black text-white border-2 border-gray-500">
+                        <img class="w-full" src="./images/players/vitor.png" alt="">
+                        <div class="py-8">
+                            <h3 class="text-3xl lg:text-2xl font-semibold">Vítor Machado</h3>
+                            <div>
+                                <p class="text-lg lg:text-base mb-6">3 Goals<span class="mx-2 sm:mx-4 text-4xl">.</span>5 Assist</p>
+                            </div>
+                            <button class="text-2xl lg:text-lg font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-3/5 py-1 sm:py-2 select-btn">SELECT</button>
                         </div>
-                        <button class="sm:text-3xl font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-9/12 py-1 sm:py-3 my-4 sm:my-8 select-btn">SELECT</button>
                     </div>
-                </div>
-                <div class="text-center bg-black text-white">
-                    <img class="w-full" src="./images/players/ramos.png" alt="">
-                    <div>
-                        <h3 class="sm:text-3xl font-semibold my-4 sm:my-8">Sergio Ramos</h3>
-                        <div>
-                            <p class="sm:text-2xl">7 Goals<span class="mx-2 sm:mx-4 text-4xl">.</span>10 Assist</p>
+                    <div class="text-center bg-black text-white border-2 border-gray-500">
+                        <img class="w-full" src="./images/players/ramos.png" alt="">
+                        <div class="py-6">
+                            <h3 class="text-3xl lg:text-2xl font-semibold">Sergio Ramos</h3>
+                            <div>
+                                <p class="text-lg lg:text-base mb-6">7 Goals<span class="mx-2 sm:mx-4 text-4xl">.</span>10 Assist</p>
+                            </div>
+                            <button class="text-2xl lg:text-lg font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-3/5 py-1 sm:py-2 select-btn">SELECT</button>
                         </div>
-                        <button class="sm:text-3xl font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-9/12 py-1 sm:py-3 my-4 sm:my-8 select-btn">SELECT</button>
                     </div>
-                </div>
-                <div class="text-center bg-black text-white">
-                    <img class="w-full" src="./images/players/Renato.png" alt="">
-                    <div>
-                        <h3 class="sm:text-3xl font-semibold my-4 sm:my-8">Renato Sanches</h3>
-                        <div>
-                            <p class="sm:text-2xl">2 Goals<span class="mx-2 sm:mx-4 text-4xl">.</span>6 Assist</p>
+                    <div class="text-center bg-black text-white border-2 border-gray-500">
+                        <img class="w-full" src="./images/players/Renato.png" alt="">
+                        <div class="py-6">
+                            <h3 class="text-3xl lg:text-2xl font-semibold">Renato Sanches</h3>
+                            <div>
+                                <p class="text-lg lg:text-base mb-6">2 Goals<span class="mx-2 sm:mx-4 text-4xl">.</span>6 Assist</p>
+                            </div>
+                            <button class="text-2xl lg:text-lg font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-3/5 py-1 sm:py-2 select-btn">SELECT</button>
                         </div>
-                        <button class="sm:text-3xl font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-9/12 py-1 sm:py-3 my-4 sm:my-8 select-btn">SELECT</button>
                     </div>
-                </div>
-                <div class="text-center bg-black text-white">
-                    <img class="w-full" src="./images/players/marquinhos.jpg" alt="">
-                    <div>
-                        <h3 class="sm:text-3xl font-semibold my-4 sm:my-8">Marquinhos</h3>
-                        <div>
-                            <p class="sm:text-2xl">7 Goals<span class="mx-2 sm:mx-4 text-4xl">.</span>5 Assist</p>
+                    <div class="text-center bg-black text-white border-2 border-gray-500">
+                        <img class="w-full" src="./images/players/marquinhos.jpg" alt="">
+                        <div class="py-6">
+                            <h3 class="text-3xl lg:text-2xl font-semibold">Marquinhos</h3>
+                            <div>
+                                <p class="text-lg lg:text-base mb-6">7 Goals<span class="mx-2 sm:mx-4 text-4xl">.</span>5 Assist</p>
+                            </div>
+                            <button class="text-2xl lg:text-lg font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-3/5 py-1 sm:py-2 select-btn">SELECT</button>
                         </div>
-                        <button class="sm:text-3xl font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-9/12 py-1 sm:py-3 my-4 sm:my-8 select-btn">SELECT</button>
                     </div>
-                </div>
-                <div class="text-center bg-black text-white">
-                    <img class="w-full" src="./images/players/keylor navas.jpg" alt="">
-                    <div>
-                        <h3 class="sm:text-3xl font-semibold my-4 sm:my-8">Keylor Navas</h3>
-                        <div>
-                            <p class="sm:text-2xl">2 Goals<span class="mx-2 sm:mx-4 text-4xl">.</span>1 Assist</p>
+                    <div class="text-center bg-black text-white border-2 border-gray-500">
+                        <img class="w-full" src="./images/players/keylor navas.jpg" alt="">
+                        <div class="py-6">
+                            <h3 class="text-3xl lg:text-2xl font-semibold">Keylor Navas</h3>
+                            <div>
+                                <p class="text-lg lg:text-base mb-6">2 Goals<span class="mx-2 sm:mx-4 text-4xl">.</span>1 Assist</p>
+                            </div>
+                            <button class="text-2xl lg:text-lg font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-3/5 py-1 sm:py-2 select-btn">SELECT</button>
                         </div>
-                        <button class="sm:text-3xl font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-9/12 py-1 sm:py-3 my-4 sm:my-8 select-btn">SELECT</button>
                     </div>
-                </div>
-                <div class="text-center bg-black text-white">
-                    <img class="w-full" src="./images/players/Gianluigi Donnarumma.jpg" alt="">
-                    <div>
-                        <h3 class="sm:text-3xl font-semibold my-4 sm:my-8">Donnarumma</h3>
-                        <div>
-                            <p class="sm:text-2xl">1 Goals<span class="mx-2 sm:mx-4 text-4xl">.</span>0 Assist</p>
+                    <div class="text-center bg-black text-white border-2 border-gray-500">
+                        <img class="w-full" src="./images/players/Gianluigi Donnarumma.jpg" alt="">
+                        <div class="py-6">
+                            <h3 class="text-3xl lg:text-2xl font-semibold">Donnarumma</h3>
+                            <div>
+                                <p class="text-lg lg:text-base mb-6">1 Goals<span class="mx-2 sm:mx-4 text-4xl">.</span>1 Assist</p>
+                            </div>
+                            <button class="text-2xl lg:text-lg font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-3/5 py-1 sm:py-2 select-btn">SELECT</button>
                         </div>
-                        <button class="sm:text-3xl font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-9/12 py-1 sm:py-3 my-4 sm:my-8 select-btn">SELECT</button>
                     </div>
                 </div>
                 
 
             </div>
-            <div class="text-center text-white font-semibold col-span-10 md:col-span-3 mt-4 md:mt-0">
+            <div class="text-center text-white col-span-10 md:col-span-4 lg:col-span-1 mt-4 md:mt-0">
                 <div class="bg-black">
-                    <h3 class="text-3xl sm:text-5xl md:text-2xl pt-8">Selected - 0<span id="selected-number">0</span></h3>
-                    <img class="mx-auto w-6/12 sm:w-9/12" src="./images/orange_underline.png" alt="">
+                    <h3 class="text-3xl sm:text-5xl lg:text-3xl pt-8 font-semibold">Selected - 0<span id="selected-number">0</span></h3>
+                    <img class="w-44 sm:w-72 lg:w-44 mx-auto" src="./images/orange_underline.png" alt="">
                     <div>
-                        <ol class="list-decimal text-left p-8  md:px-6 md:py-6 list-inside sm:text-3xl md:text-base xl:text-2xl marker:text-amber-500" id="order-list">
+                        <ol class="list-decimal text-left p-8  md:p-6 lg:p-5 list-inside sm:text-4xl md:text-5xl lg:text-lg xl:text-2xl marker:text-amber-500" id="order-list">
 
                         </ol>
-                        <p class="text-red-600 font-medium pb-12 text-base" id="select-error"></p>
+                        <p class="text-red-600 pb-12 sm:text-4xl md:text-5xl lg:text-lg 2xl:text-2xl px-4" id="select-error"></p>
                     </div>
                 </div>
                 <div class="bg-black">
                     <div class="mt-8">
-                        <div class="pt-10 px-10 sm:text-2xl md:text-xs xl:text-2xl">
-                            <h3 class="text-3xl sm:text-5xl md:text-2xl">Budge</h3>
-                            <img class="mx-auto w-6/12 sm:w-9/12 pb-4" src="./images/orange_underline.png" alt="">
-                            <div class="flex flex-row items-center">
-                                <p class="w-2/4 text-left">Per Player</p>
-                                <input class="w-2/4 pl-6 py-2 bg-black font-medium border border-white focus:outline-none" type="text" id="player-price">
+                        <div class="pt-10 px-10 lg:px-3 xl:px-8 sm:text-2xl md:text-5xl lg:text-2xl xl:text-base 2xl:text-3xl">
+
+                            <h3 class="text-3xl sm:text-5xl lg:text-3xl font-semibold">Budge</h3>
+                            <img class="w-24 sm:w-36 lg:w-24 mx-auto pb-6" src="./images/orange_underline.png" alt="">
+
+                            <div class="flex flex-row lg:flex-col xl:flex-row items-center">
+                                <p class="w-2/4 text-left lg:text-center xl:text-left">Per Player</p>
+                                <input class="w-2/4 lg:w-4/5 xl:w-2/4 lg:mt-2 xl:mt-0 pl-3 py-2 bg-black font-medium border border-white focus:outline-none lg:text-center xl:text-left" type="text" id="player-price">
                             </div>
-                            <button class="text-2xl md:text-xs lg:text-base xl:text-2xl font-semibold rounded-md bg-sky-500 hover:bg-orange-600 w-6/12 py-3 my-8" id="calculate">Calculate</button>
+
+                            <button class="text-2xl lg:text-lg font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-3/5 py-1 sm:py-2 my-8" id="calculate">Calculate</button>
+
                             <p class="text-red-600 font-medium mb-6" id="player-value-error"></p>
-                            <div class="flex flex-row justify-center items-center">
-                                <p class="w-2/4 text-left">Player Expenses </p><p class="w-2/4">$<span id="player-expense">00.00</span></p>
+
+                            <div class="flex flex-row lg:flex-col xl:flex-row xl:text-base 2xl:text-3xl justify-center items-center">
+                                <p class="w-2/6 lg:w-4/5 xl:w-2/4 text-left lg:text-center xl:text-left 2xl:text-2xl">Player Expenses </p>
+                                <p class="w-4/6 lg:w-4/5 xl:w-2/4 lg:text-lg 2xl:text-2xl lg:px-0 xl:text-left">$<span id="player-expense">00.00</span></p>
                             </div>
-                            <div class="flex flex-row items-center my-8">
-                                <p class="w-2/4 text-left">Manager</p>
-                                <input class="w-2/4 pl-6 py-2 bg-black font-medium border border-white focus:outline-none" type="text" id="manager-price">
+
+                            <div class="flex flex-row lg:flex-col xl:flex-row items-center my-8">
+                                <p class="w-2/4 text-left lg:text-center xl:text-left">Manager</p>
+                                <input class="w-2/4 pl-3 py-2 bg-black font-medium border border-white focus:outline-none lg:text-center" type="text" id="manager-price">
                             </div>
-                            <div class="flex flex-row items-center">
-                                <p class="w-2/4 text-left">Coach</p>
-                                <input class="w-2/4 pl-6 py-2 bg-black font-medium border border-white focus:outline-none" type="text" id="coach-price">
+
+                            <div class="flex flex-row lg:flex-col xl:flex-row items-center">
+                                <p class="w-2/4 text-left lg:text-center xl:text-left">Coach</p>
+                                <input class="w-2/4 pl-3 py-2 bg-black font-medium border border-white focus:outline-none lg:text-center" type="text" id="coach-price">
                             </div>
-                            <button class="text-2xl md:text-xs lg:text-base xl:text-2xl font-semibold rounded-md bg-sky-500 hover:bg-orange-600 w-6/12 py-3 my-8" id="total-calculate">Calculate Total</button>
-                            <p class="text-red-600 font-medium mb-6" id="value-error"></p>
-                            <div class="flex flex-row justify-center items-center pb-10">
-                                <p class="w-2/4 text-left">Total </p><p class="w-2/4 text-orange-600">$<span id="total">00.00</span></p>
+
+                            <button class="text-2xl lg:text-lg font-semibold rounded-md bg-sky-600 hover:bg-orange-600 w-3/5 py-1 sm:py-2 my-8" id="total-calculate">Calculate Total</button>
+
+                            <p class="text-red-600 lg:text-2xl mb-6" id="value-error"></p>
+
+                            <div class="flex flex-row lg:flex-col xl:flex-row xl:text-base 2xl:text-3xl justify-center items-center pb-10">
+                                <p class="w-1/4  text-left lg:text-center xl:text-left ">Total </p>
+                                <p class="w-3/4 lg:text-lg 2xl:text-2xl lg:px-0 text-orange-600 xl:pl-4 xl:text-left">$<span id="total">00.00</span></p>
                             </div>
                         </div>
                     </div> 

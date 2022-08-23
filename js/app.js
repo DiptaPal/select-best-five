@@ -25,7 +25,6 @@ for(const selectBtn of selectBtns){
 //function for calculate total player price and set them in player expense
 document.getElementById('calculate').addEventListener('click', function(){ 
 
-    //total price of selected player
     const totalPlayer = playerName.length;
 
     //per player price with error handling
@@ -45,6 +44,7 @@ document.getElementById('calculate').addEventListener('click', function(){
         setInnerTextById('player-value-error', '');
     }
 
+    //total price of selected player
     const totalPrice = totalPlayer * perPlayerPrice;
     setInnerTextById('player-expense', totalPrice.toFixed(2));
 });
@@ -55,15 +55,13 @@ document.getElementById('total-calculate').addEventListener('click',function(){
     const totalPriceString = totalPlayerPrice.innerText;
     const totalPrice = parseFloat(totalPriceString);
 
+    const playerPrice = valueWithoutError('player-price');
     const managerPrice = valueWithoutError('manager-price');
     const coachPrice = valueWithoutError('coach-price');
-    const playerPrice = valueWithoutError('player-price')
-
-
-    //total price of selected player
+    
     const totalPlayer = playerName.length;
 
-    //error handling for player price
+    //total cost with error handling
     if(totalPlayer === 0){
         setInnerTextById('select-error',"Please select the player first");
     }
@@ -83,6 +81,7 @@ document.getElementById('total-calculate').addEventListener('click',function(){
         setInnerTextById('value-error', '');
     }
 
+     //total cost
     let totalCost = totalPrice + managerPrice + coachPrice;
     setInnerTextById('total', totalCost.toFixed(2));
 
