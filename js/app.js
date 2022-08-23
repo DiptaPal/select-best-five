@@ -16,7 +16,8 @@ for(const selectBtn of selectBtns){
             disabledBtn(event.target);
         }
         else{
-            setInnerTextById('select-error','You cannot select more than 5 players');
+            setInnerTextById('select-error','Already 5 players are selected');
+            alert('You cannot select more than 5 players');
             return;
         }
     });
